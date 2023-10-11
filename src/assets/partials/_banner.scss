@@ -1,9 +1,16 @@
 .banner{
     background-color: $white-v2;
-    padding: 8rem 0;
     position: relative;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    transition: all 0.4ms ease-in-out;
     .banner-top-wrapper{
         width: 100%;
+        position: absolute;
+        top: 11%;
+        left: 0%;
+        padding: 0rem 2rem;
         .banner-top-heading{
             h1{
                 font-size: 16.5rem;
@@ -12,9 +19,9 @@
                 text-align: center;
                 line-height: .85;
                 text-transform: uppercase;
-                color: $light-black;
+                color: $white;
                 span{
-                    color: $red;
+                    color: $white;
                     font-weight: 700;
                 }
             }
@@ -27,10 +34,10 @@
             text-transform: uppercase;
             font-family: $Formula-CondensedBlack;
             font-weight: 400;
-            color: $light-black;
+            color: $white;
             font-size: 2rem;
             .red-title{
-                color: $red;
+                color: $white;
                 font-weight: 700;
             }
         }
@@ -40,28 +47,182 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        position: absolute;
+        top: 30%;
+        left: 0%;
+        height: 60vh;
         img{
             max-width: 700px;
             width: 100%;
             min-height: 467px;
+            scale: 1;
+            transition: all 0.4ms ease-in-out;
         }
     }
     .banner-btn-wrapper{
         position: absolute;
         bottom: 0;
         right: 0;
-        button{
-            background: transparent;
-            height: 100px;
-            width: 100px;
-            border-radius: 100px;
-            overflow: hidden;
-            border: 1px solid $light-black;
-            outline: none;
-            cursor: pointer;
+        z-index: 3;
+        height: 44.5%;
+        max-width: 420px;
+        width: 100%;
+        .banner-btn-block{
+            position: relative;
+            width: 100%;
+            height: 100%;
+            button{
+                background: transparent;
+                height: 70px;
+                width: 70px;
+                border-radius: 100px;
+                overflow: hidden;
+                border: 3px solid transparent;
+                outline: none;
+                cursor: pointer;
+                transition: all 0.4ms ease-in-out;
+                &:first-child{
+                    position: absolute;
+                    bottom: 15%;
+                    left: 11%;
+                }
+                &:nth-child(2){
+                    position: absolute;
+                    bottom: 36%;
+                    left: 15%;
+                }
+                &:nth-child(3){
+                    position: absolute;
+                    bottom: 56%;
+                    left: 22%;
+                }
+                &:nth-child(4){
+                    position: absolute;
+                    bottom: 73%;
+                    left: 34%;
+                }
+                &:nth-child(5){
+                    position: absolute;
+                    bottom: 88%;
+                    left: 48%;
+                }
+                &:nth-child(6){
+                    position: absolute;
+                    bottom: 97%;
+                    left: 65%;
+                }
+                img{
+                    width: 100%;
+                    transition: all 0.4ms ease-in-out;
+                }
+                &:hover{
+                    border: 3px solid #fff;
+                    transition-delay: .1s!important;
+                    img{
+                        scale: 1.1;
+                        transition-delay: .1s!important;
+                    }
+                }
+            }
+            .active{
+                border: 3px solid #fff;
+                transition-delay: .1s!important;
+            }
+        }
+       
+    }
+    .bottom-url{
+        position: fixed;
+        bottom: 1rem;
+        left: 1rem;
+        height: 250px;
+        width: 262px;
+        z-index: 4;
+        
+        img{
+            width: 100%;
+            height: 100%;
+        }
+        .banner-text-wrapper{
+            transform-origin: center;
+            transform: translateX(-50%) translateY(-50%) rotate(-19deg);
+            position: absolute;
+            top: 55%;
+            left: 48%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            h6{
+                font-size: clamp(12px,1.6510566763rem,300px);
+                line-height: .93;
+                letter-spacing: .02em;
+                font-family: $Formula-CondensedBlack;
+                font-weight: 700;
+                text-align: center;
+                text-transform: uppercase;
+            }
+            .orange-text{
+                color: $red-light;
+            }
+            .red-text{
+                margin-top: 5px;
+                color: $dark-red;
+            }
+            
+        }
+    }
+    &.brown{
+       background-color: rgb(192, 154, 127);
+        .banner-image-wrapper {
             img{
-                width: 100%;
-                
+                scale: 1.1;
+                transition-delay: .1s!important;
+            }
+        }
+    }
+    &.mango{
+        background-color: rgb(220, 33, 50);
+        .banner-image-wrapper {
+            img{
+                scale: 1.1;
+                transition-delay: .1s!important;
+            }
+        }
+    }
+    &.pink{
+        background-color: rgb(253, 205, 212);
+        .banner-image-wrapper {
+            img{
+                scale: 1.1;
+                transition-delay: .1s!important;
+            }
+        }
+    }
+    &.purple{
+        background-color: rgb(159, 76, 135);
+        .banner-image-wrapper {
+            img{
+                scale: 1.1;
+                transition-delay: .1s!important;
+            }
+        }
+    }
+    &.yellow{
+        background-color: rgb(249, 219, 0);
+        .banner-image-wrapper {
+            img{
+                scale: 1.1;
+                transition-delay: .1s!important;
+            }
+        }
+    }
+    &.red{
+        background-color: rgb(174, 35, 58);
+        .banner-image-wrapper {
+            img{
+                scale: 1.1;
+                transition-delay: .1s!important;
             }
         }
     }

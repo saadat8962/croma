@@ -1,0 +1,28 @@
+.bubble-section{
+    margin-top: -24vw;
+    position: relative;
+    overflow-x: hidden;
+    .banner-bottom-img{
+        width: 122%;
+        position: relative;
+        left: -3rem;
+    }
+    .bubble-heading-wrapper{
+        position: absolute;
+        top: 46%;
+        left: 0%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        h2{
+            color: $dark-red;
+            font-family: $Formula-CondensedBlack;
+            line-height: .85;
+            font-size: clamp(12px,11.6074287544rem,300px);
+            letter-spacing: .02em;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+}
