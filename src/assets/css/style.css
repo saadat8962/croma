@@ -1,0 +1,64 @@
+@font-face {
+  font-family: "PPFormula-CondensedBlack";
+  src: url("../fonts/FormulaCondensed-Light.otf") format("opentype");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "PPFormula-CondensedBlack";
+  src: url("../fonts/PPFormula-ExtendedMedium.otf") format("opentype");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "PPFormula-CondensedBlack";
+  src: url("../fonts/PPFormula-SemiExtendedBold.otf") format("opentype");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "PPFormula-CondensedBlack";
+  src: url("../fonts/PPFormula-ExtendedBold.otf") format("opentype");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "PPFormula-CondensedBlack";
+  src: url("../fonts/PPFormula-CondensedBlack.otf") format("opentype");
+  font-weight: 900;
+  font-style: normal;
+}
+/*--------Font-Family---------*/
+/* Brand Fonts & Treatment -------------------------------------*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/*width-desktop-medium*/
+/*width-desktop-small*/
+/*width-tablet*/
+/*width-mobile-large*/
+/*width-mobile*/
+.banner {
+  background-color: #F3EFE6;
+  padding: 3rem 2rem;
+}
+.banner .banner-top-wrapper {
+  width: 100%;
+}
+.banner .banner-top-wrapper .banner-top-heading h1 {
+  font-size: 16.5rem;
+  font-family: "PPFormula-CondensedBlack";
+  font-weight: 300;
+  color: #fff;
+  text-align: center;
+  line-height: 0.85;
+  text-transform: uppercase;
+}
+.banner .banner-top-wrapper .banner-top-heading h1 span {
+  color: #EF1525;
+}
+.banner .banner-top-wrapper .banner-bottom-title {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  text-transform: uppercase;
+}/*# sourceMappingURL=style.css.map */

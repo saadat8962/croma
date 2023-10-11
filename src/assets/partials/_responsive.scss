@@ -1,0 +1,33 @@
+//* Reponsive Variables ---------------------------------------*/
+
+$wdm: 1440px;   /*width-desktop-medium*/
+$wds: 1080px;   /*width-desktop-small*/
+//$wdm: 950px;     /*width-desktop-medium*/
+//$wds: 850px;    /*width- desktop-small*/
+$wt: 768px;     /*width-tablet*/
+$wml: 576px;    /*width-mobile-large*/
+$wm: 380px;      /*width-mobile*/
+
+@mixin breakpoint($class) {
+
+  @if $class == desktop-medium {
+    @media (max-width: $wdl) { @content; }
+  }
+
+  @if $class == desktop-small {
+    @media (max-width: $wdm) { @content; }
+  }
+
+  @if $class == tablet {
+    @media (max-width: $wds) { @content; }
+  }
+
+  @if $class == mobile-large {
+    @media (max-width: $wt) { @content; }
+  }
+
+  @if $class == mobile {
+    @media (max-width: $wml) { @content; }
+  }
+
+}

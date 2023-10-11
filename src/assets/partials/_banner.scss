@@ -1,0 +1,28 @@
+.banner{
+    background-color: $white-v2;
+    padding: 3rem 2rem;
+    .banner-top-wrapper{
+        width: 100%;
+        .banner-top-heading{
+            h1{
+                font-size: 16.5rem;
+                font-family: $Formula-CondensedBlack;
+                font-weight: 300;
+                color: $white;
+                text-align: center;
+                line-height: .85;
+                text-transform: uppercase;
+                span{
+                    color: $red;
+                }
+            }
+        }
+        .banner-bottom-title{
+            width: 100%;
+            display: flex;
+            justify-content: end;
+            text-transform: uppercase;
+        }
+    }
+}
+
