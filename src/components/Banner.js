@@ -30,14 +30,16 @@ const imagePaths = {
 function Banner() {
 
   const [currentImage, setCurrentImage] = useState(bannerImageBrwn);
+  const [activeButton, setActiveButton] = useState(null);
 
   const handleImageChange = (buttonKey) => {
     setCurrentImage(imagePaths[buttonKey]);
+    setActiveButton(buttonKey);
   }
 
   return (
     
-  <section className="banner">
+  <section className={activeButton === 'btn1' ? 'banner brown' : activeButton === 'btn2' ? 'banner red' : activeButton === 'btn3' ? 'banner mango' : activeButton === 'btn4' ? 'banner pink' : activeButton === 'btn5' ? 'banner purple' : activeButton === 'btn6' ? 'banner yellow' : 'banner'}>
     <div className="container">
      <div className="banner-top-wrapper">
         <div className="banner-top-heading"> 
@@ -48,27 +50,27 @@ function Banner() {
           <p>and body care</p> 
         </div> 
      </div>
-     <div className="banner-image-wrapper">
+     <div className="banner-image-wrapper ">
         <img src={currentImage}/>
      </div>
     </div>
-    <div className='banner-btn-wrapper'>
-      <button onClick={() => handleImageChange('btn1')} className='btn-1'>
+    <div className="banner-btn-wrapper">
+      <button onClick={() => handleImageChange('btn1')} className={activeButton === 'btn1' ? 'active' : ''}>
         <img src={btnImageBrwn}/>
       </button>
-      <button onClick={() => handleImageChange('btn2')} className='btn-1'>
+      <button onClick={() => handleImageChange('btn2')} className={activeButton === 'btn2' ? 'active' : ''}>
         <img src={btnImageRed}/>
       </button>
-      <button onClick={() => handleImageChange('btn3')} className='btn-1'>
+      <button onClick={() => handleImageChange('btn3')} className={activeButton === 'btn3' ? 'active' : ''}>
         <img src={btnImageMango}/>
       </button>
-      <button onClick={() => handleImageChange('btn4')} className='btn-1'>
+      <button onClick={() => handleImageChange('btn4')} className={activeButton === 'btn4' ? 'active' : ''}>
         <img src={btnImagePink}/>
       </button>
-      <button onClick={() => handleImageChange('btn5')} className='btn-1'>
+      <button onClick={() => handleImageChange('btn5')} className={activeButton === 'btn5' ? 'active' : ''}>
         <img src={btnImagePurple}/>
       </button>
-      <button onClick={() => handleImageChange('btn6')} className='btn-1'>
+      <button onClick={() => handleImageChange('btn6')} className={activeButton === 'btn6' ? 'active' : ''}>
         <img src={btnImageYellow}/>
       </button>
     </div>

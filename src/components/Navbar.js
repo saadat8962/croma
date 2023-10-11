@@ -3,9 +3,10 @@
 function Navbar() {
   return (
     
-  <header className="header">
+    <header className="header">
     <div className="container">
-      <h1 className="project-heading">Croma</h1>
+      <a href="#">croma cosmetic</a>
+      <a href="#">our story</a>
     </div>
   </header>
   );

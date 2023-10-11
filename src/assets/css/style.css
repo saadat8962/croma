@@ -27,9 +27,31 @@
 /*width-tablet*/
 /*width-mobile-large*/
 /*width-mobile*/
+header.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99;
+}
+header.header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.25rem 15px;
+}
+header.header .container a {
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #333333;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+
 .banner {
   background-color: #F3EFE6;
-  padding: 3rem 0;
+  padding: 8rem 0;
   position: relative;
 }
 .banner .banner-top-wrapper {
