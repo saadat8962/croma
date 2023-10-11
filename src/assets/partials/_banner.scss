@@ -1,6 +1,7 @@
 .banner{
     background-color: $white-v2;
     padding: 3rem 0;
+    position: relative;
     .banner-top-wrapper{
         width: 100%;
         .banner-top-heading{
@@ -35,11 +36,34 @@
         }
     }
     .banner-image-wrapper{
-        margin-top: -42px;
         width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
+        img{
+            max-width: 700px;
+            width: 100%;
+            min-height: 467px;
+        }
+    }
+    .banner-btn-wrapper{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        button{
+            background: transparent;
+            height: 100px;
+            width: 100px;
+            border-radius: 100px;
+            overflow: hidden;
+            border: 1px solid $light-black;
+            outline: none;
+            cursor: pointer;
+            img{
+                width: 100%;
+                
+            }
+        }
     }
 }
 

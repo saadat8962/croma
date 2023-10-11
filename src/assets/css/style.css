@@ -16,6 +16,12 @@
   box-sizing: border-box;
 }
 
+.container {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
 /*width-desktop-medium*/
 /*width-desktop-small*/
 /*width-tablet*/
@@ -24,6 +30,7 @@
 .banner {
   background-color: #F3EFE6;
   padding: 3rem 0;
+  position: relative;
 }
 .banner .banner-top-wrapper {
   width: 100%;
@@ -57,9 +64,31 @@
   font-weight: 700;
 }
 .banner .banner-image-wrapper {
-  margin-top: -42px;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.banner .banner-image-wrapper img {
+  max-width: 700px;
+  width: 100%;
+  min-height: 467px;
+}
+.banner .banner-btn-wrapper {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.banner .banner-btn-wrapper button {
+  background: transparent;
+  height: 100px;
+  width: 100px;
+  border-radius: 100px;
+  overflow: hidden;
+  border: 1px solid #333333;
+  outline: none;
+  cursor: pointer;
+}
+.banner .banner-btn-wrapper button img {
+  width: 100%;
 }/*# sourceMappingURL=style.css.map */
