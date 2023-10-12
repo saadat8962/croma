@@ -31,7 +31,7 @@ const imagePaths = {
 
 function Banner() {
 
-  const [currentImage, setCurrentImage] = useState(bannerImageBrwn);
+  const [currentImage, setCurrentImage] = useState(bannerImagePink);
   const [activeButton, setActiveButton] = useState('btn1');
 
   const imageKeys = ['btn1', 'btn2', 'btn3', 'btn4', 'btn5', 'btn6'];

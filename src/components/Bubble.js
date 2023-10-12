@@ -1,13 +1,11 @@
-import React, { useState, useEffect } from 'react';
-
-import bottmDesign from '../assets/img/banner_bottom_design.svg';
+import yellowBubble from '../assets/img/yellow_bubble_design.svg';
 
 function Bubble() {
 
   return (
   <section className='bubble-section'>
     <div className='banner-bottom-img'>
-      <img src={bottmDesign}/>
+      <img src={yellowBubble}/>
     </div>
     <div className='bubble-heading-wrapper'>
       <h2>

@@ -60,6 +60,7 @@ header.header .container a {
   width: 100vw;
   height: 100vh;
   transition: all 0.4ms ease-in-out;
+  z-index: 1;
 }
 .banner .banner-top-wrapper {
   width: 100%;
@@ -110,8 +111,7 @@ header.header .container a {
   max-width: 700px;
   width: 100%;
   min-height: 467px;
-  scale: 1;
-  transition: all 0.4ms ease-in-out;
+  transition: all 1s ease-in-out;
 }
 .banner .banner-btn-wrapper {
   position: absolute;
@@ -223,49 +223,147 @@ header.header .container a {
   margin-top: 5px;
   color: #EF1525;
 }
-.banner.brown {
+.banner.brown::after {
+  content: "";
   background-color: rgb(192, 154, 127);
+  position: absolute;
+  z-index: -1;
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transform: translateX(-50%) translateY(-50%);
+  animation: circleGrowUp1 1s ease-in forwards;
 }
 .banner.brown .banner-image-wrapper img {
-  scale: 1.1;
-  transition-delay: 0.1s !important;
+  transform: scale(1.5);
 }
-.banner.mango {
+.banner.mango::after {
+  content: "";
   background-color: rgb(220, 33, 50);
+  position: absolute;
+  z-index: -1;
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transform: translateX(-50%) translateY(-50%);
+  animation: circleGrowUp2 1s ease-in forwards;
 }
 .banner.mango .banner-image-wrapper img {
-  scale: 1.1;
-  transition-delay: 0.1s !important;
+  transform: scale(1.5);
 }
-.banner.pink {
+.banner.pink::after {
+  content: "";
   background-color: rgb(253, 205, 212);
+  position: absolute;
+  z-index: -1;
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transform: translateX(-50%) translateY(-50%);
+  animation: circleGrowUp3 1s ease-in forwards;
 }
 .banner.pink .banner-image-wrapper img {
-  scale: 1.1;
-  transition-delay: 0.1s !important;
+  transform: scale(1.5);
 }
-.banner.purple {
+.banner.purple::after {
+  content: "";
   background-color: rgb(159, 76, 135);
+  position: absolute;
+  z-index: -1;
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transform: translateX(-50%) translateY(-50%);
+  animation: circleGrowUp4 1s ease-in forwards;
 }
 .banner.purple .banner-image-wrapper img {
-  scale: 1.1;
-  transition-delay: 0.1s !important;
+  transform: scale(1.5);
 }
-.banner.yellow {
+.banner.yellow::after {
+  content: "";
   background-color: rgb(249, 219, 0);
+  position: absolute;
+  z-index: -1;
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transform: translateX(-50%) translateY(-50%);
+  animation: circleGrowUp5 1s ease-in forwards;
 }
 .banner.yellow .banner-image-wrapper img {
-  scale: 1.1;
-  transition-delay: 0.1s !important;
-}
-.banner.red {
-  background-color: rgb(174, 35, 58);
-}
-.banner.red .banner-image-wrapper img {
-  scale: 1.1;
-  transition-delay: 0.1s !important;
+  transform: scale(1.5);
 }
 
+@keyframes circleGrowUp {
+  from {
+    width: 0;
+    height: 0;
+  }
+  to {
+    width: 300vw;
+    height: 300vw;
+  }
+}
+@keyframes circleGrowUp1 {
+  from {
+    width: 0;
+    height: 0;
+  }
+  to {
+    width: 300vw;
+    height: 300vw;
+  }
+}
+@keyframes circleGrowUp2 {
+  from {
+    width: 0;
+    height: 0;
+  }
+  to {
+    width: 300vw;
+    height: 300vw;
+  }
+}
+@keyframes circleGrowUp3 {
+  from {
+    width: 0;
+    height: 0;
+  }
+  to {
+    width: 300vw;
+    height: 300vw;
+  }
+}
+@keyframes circleGrowUp4 {
+  from {
+    width: 0;
+    height: 0;
+  }
+  to {
+    width: 300vw;
+    height: 300vw;
+  }
+}
+@keyframes circleGrowUp5 {
+  from {
+    width: 0;
+    height: 0;
+  }
+  to {
+    width: 300vw;
+    height: 300vw;
+  }
+}
 .bubble-section {
   margin-top: -24vw;
   position: relative;
@@ -293,4 +391,105 @@ header.header .container a {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.transformed-section {
+  margin-top: -21rem;
+  position: relative;
+  overflow-x: hidden;
+  z-index: -2;
+}
+.transformed-section .banner-bottom-img {
+  width: 122%;
+  position: relative;
+  left: -3rem;
+}
+.transformed-section .bubble-heading-wrapper {
+  position: absolute;
+  top: 46%;
+  left: 0%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.transformed-section .bubble-heading-wrapper h2 {
+  color: #EF1525;
+  font-family: "PPFormula-CondensedBlack";
+  line-height: 0.85;
+  font-size: clamp(12px, 11.6074287544rem, 300px);
+  letter-spacing: 0.02em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.onebite-section {
+  width: 100%;
+  margin-top: -1.5rem;
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+}
+.onebite-section .onebite-bg-img {
+  position: absolute;
+  width: 106%;
+  left: -3rem;
+  margin-top: -2rem;
+  z-index: -1;
+}
+.onebite-section .onebite-bubble-img {
+  width: 96rem;
+  position: relative;
+  left: -3rem;
+}
+.onebite-section .onebite-content-wrapper {
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.onebite-section .onebite-content-wrapper h2 {
+  font-family: "PPFormula-CondensedBlack";
+  line-height: 0.93;
+  letter-spacing: 0.02em;
+  font-size: clamp(12px, 9.5060838937rem, 300px);
+  color: #A380AE;
+  text-transform: uppercase;
+}
+.onebite-section .onebite-content-wrapper .mt-14 {
+  margin-top: -20px;
+  position: relative;
+  z-index: -1;
+}
+.onebite-section .onebite-content-wrapper .onebite-img {
+  max-width: 14rem;
+  margin-top: -14px;
+  min-height: 263px;
+  height: 100%;
+}
+.onebite-section .onebite-content-wrapper .onebite-img img {
+  width: 100%;
+  height: 100%;
+}
+.onebite-section .onebite-content-wrapper h3 {
+  font-family: "PPFormula-CondensedBlack";
+  color: #A380AE;
+  font-size: clamp(12px, 3.5022414345rem, 300px);
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  max-width: 326px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.onebite-section .onebite-content-wrapper h3 span {
+  display: block;
+}
+.onebite-section .onebite-content-wrapper .white-arrow-down {
+  width: 30px;
+  height: 30px;
+  transform: rotate(-90deg);
+  margin-top: 54px;
 }/*# sourceMappingURL=style.css.map */
